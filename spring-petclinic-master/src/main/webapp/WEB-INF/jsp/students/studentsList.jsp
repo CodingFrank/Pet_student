@@ -11,10 +11,12 @@
     <table id="vets" class="table table-striped">
         <thead>
         <tr>
-            <th style="width: 150px;">Name</th>
-            <th style="width: 200px;">Address</th>
+            <th style="width: 80px;">Name</th>
+            <th style="width: 120px;">Address</th>
             <th>City</th>
-            <th style="width: 120px">Telephone</th>
+            <th style="width: 80px">Telephone</th>
+            <th>Age</th>
+            <th style="width: 80px">Department</th>
         </tr>
         </thead>
         <tbody>
@@ -34,6 +36,12 @@
                 </td>
                 <td>
                     <c:out value="${student.telephone}"/>
+                </td>
+                <td>
+                    <c:out value="${student.age}"/>
+                </td>
+                <td>
+                    <c:out value="${student.department}"/>
                 </td>
             </tr>
         </c:forEach>

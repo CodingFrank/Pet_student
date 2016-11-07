@@ -50,7 +50,9 @@ CREATE TABLE students (
   last_name  VARCHAR_IGNORECASE(30),
   address    VARCHAR(255),
   city       VARCHAR(80),
-  telephone  VARCHAR(20)
+  telephone  VARCHAR(20),
+  age        INTEGER,
+  department VARCHAR(80)
 );
 
 CREATE INDEX students_last_name ON students (last_name);

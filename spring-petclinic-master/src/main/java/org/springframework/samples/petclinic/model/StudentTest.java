@@ -30,7 +30,7 @@ import org.springframework.core.style.ToStringCreator;
  */
 @Entity
 @Table(name = "students")
-public class Student extends Person {
+public class StudentTest extends Person {
     @Column(name = "address")
     @NotEmpty
     private String address;
@@ -52,11 +52,15 @@ public class Student extends Person {
     @NotEmpty
     private String department;
 
-    public String getAddress() {
+    public String Student(Integer id, String name) {
+        return this.address;
+    }
+    
+    String getAddress() {
         return this.address;
     }
 
-    public void setAddress(String address) {
+    void setAddress(String address) {
         this.address = address;
     }
 
@@ -68,11 +72,11 @@ public class Student extends Person {
         this.city = city;
     }
 
-    public String getTelephone() {
+    protected String getTelephone() {
         return this.telephone;
     }
 
-    public void setTelephone(String telephone) {
+    protected void setTelephone(String telephone) {
         this.telephone = telephone;
     }
     
@@ -106,5 +110,8 @@ public class Student extends Person {
             .append("age", this.age)
             .append("department", this.department)
             .toString();
+    }
+    public void printStudentInfo() {
+    	this.age = 0;
     }
 }

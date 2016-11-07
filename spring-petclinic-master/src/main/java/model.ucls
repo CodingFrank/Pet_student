@@ -1,211 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.11" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="org.springframework.samples.petclinic.PetclinicInitializer" 
-    project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/PetclinicInitializer.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="304" x="88" y="89"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="org.springframework.samples.petclinic.model.BaseEntity" 
+  <class id="1" language="java" name="org.springframework.samples.petclinic.model.BaseEntity" 
     project="spring-petclinic-master" 
     file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="198" x="504" y="161"/>    
+    <position height="-1" width="-1" x="201" y="129"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="org.springframework.samples.petclinic.model.NamedEntity" 
+  <class id="2" language="java" name="org.springframework.samples.petclinic.model.Student" 
     project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java" 
+    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Student.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="198" x="774" y="281"/>    
+    <position height="-1" width="-1" x="458" y="416"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="org.springframework.samples.petclinic.model.Owner" 
+  <interface id="3" language="java" name="org.springframework.samples.petclinic.repository.StudentRepository" 
     project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Owner.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="646" y="745"/>    
+    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/repository/StudentRepository.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1033" y="520"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
-  </class>  
-  <class id="5" language="java" name="org.springframework.samples.petclinic.model.Person" 
+  </interface>  
+  <class id="4" language="java" name="org.springframework.samples.petclinic.model.Person" 
     project="spring-petclinic-master" 
     file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Person.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="189" width="198" x="69" y="339"/>    
+    <position height="-1" width="-1" x="445" y="26"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="org.springframework.samples.petclinic.model.Pet" project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Pet.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1000" y="709"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="org.springframework.samples.petclinic.model.PetType" 
+  <class id="5" language="java" name="org.springframework.samples.petclinic.repository.jpa.JpaStudentRepositoryImpl" 
     project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/PetType.java" 
+    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaStudentRepositoryImpl.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="198" x="1061" y="309"/>    
+    <position height="-1" width="-1" x="1245" y="328"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="org.springframework.samples.petclinic.model.Specialty" 
+  <interface id="6" language="java" name="org.springframework.samples.petclinic.service.ClinicService" 
     project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Specialty.java" 
+    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/service/ClinicService.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="198" x="968" y="115"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <position height="279" width="204" x="1207" y="-94"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
-  </class>  
-  <class id="9" language="java" name="org.springframework.samples.petclinic.model.Vet" project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Vet.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="315" y="710"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="org.springframework.samples.petclinic.model.Vets" 
+  </interface>  
+  <class id="7" language="java" name="org.springframework.samples.petclinic.service.ClinicServiceImpl" 
     project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Vets.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="99" width="198" x="779" y="98"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/service/ClinicServiceImpl.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="369" width="334" x="756" y="-111"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="org.springframework.samples.petclinic.model.Visit" 
-    project="spring-petclinic-master" 
-    file="/spring-petclinic-master/src/main/java/org/springframework/samples/petclinic/model/Visit.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="225" width="198" x="1226" y="520"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <association id="12">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="13" name="owner"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="15">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="16" name="type"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="18">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="19" name="visits"/>      
-      <multiplicity id="20" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="21">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
   </generalization>  
-  <generalization id="22">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
-  <association id="23">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="24" name="vets"/>      
-      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="26">    
-    <end type="SOURCE" refId="6"/>    
+  <realization id="9">    
+    <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="10">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="27">    
+  <dependency id="12">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="28">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="29" name="pet"/>      
-      <multiplicity id="30" minimum="0" maximum="1"/>    
+  </dependency>  
+  <association id="13">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="14" name="studentRepository"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="31">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="32">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="33" name="pets"/>      
-      <multiplicity id="34" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="35">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="36">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <generalization id="37">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
-  <association id="38">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="39" name="specialties"/>      
-      <multiplicity id="40" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

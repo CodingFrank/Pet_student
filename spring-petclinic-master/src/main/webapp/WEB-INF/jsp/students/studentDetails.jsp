@@ -27,6 +27,14 @@
             <th>Telephone</th>
             <td><c:out value="${student.telephone}"/></td>
         </tr>
+        <tr>
+            <th>Age</th>
+            <td><c:out value="${student.age}"/></td>
+        </tr>
+        <tr>
+            <th>Department</th>
+            <td><c:out value="${student.department}"/></td>
+        </tr>
     </table>
 
     <spring:url value="{studentId}/edit.html" var="editUrl">
