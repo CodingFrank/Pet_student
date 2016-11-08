@@ -40,7 +40,8 @@ import org.apache.log4j.Logger;
 @Controller
 public class StudentController {
 
-    private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM = "students/createOrUpdateStudentForm";
+	private static final Logger logger = Logger.getLogger(StudentController.class);
+	private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM = "students/createOrUpdateStudentForm";
     private final ClinicService clinicService;
 
 
@@ -58,14 +59,17 @@ public class StudentController {
     public String initCreationForm(Map<String, Object> model) {
         Student student = new Student();
         model.put("student", student);
+        logger.debug("We are creating a new record!!");
         return VIEWS_OWNER_CREATE_OR_UPDATE_FORM;
     }
 
     @RequestMapping(value = "/students/new", method = RequestMethod.POST)
     public String processCreationForm(@Valid Student student, BindingResult result) {
         if (result.hasErrors()) {
+        	logger.error("Oops, errors!!!");
             return VIEWS_OWNER_CREATE_OR_UPDATE_FORM;
         } else {
+        	logger.info("New record created successfully!!!");
             this.clinicService.saveStudent(student);
             return "redirect:/students/" + student.getId();
         }
